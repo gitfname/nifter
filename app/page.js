@@ -1,6 +1,15 @@
+import Hero_1 from "@/components/Hero_1";
+import StatusCard_1 from "@/components/StatusCard_1";
 
 export default function Home() {
   return (
-    <p className="m-10 text-purple-700 text-3xl font-bold">5.000 ETH</p>
+    <div className="bg-slate-900">
+      <Hero_1 />
+      <div className="z-10 relative pr-20 flex justify-end -translate-y-12">
+        <div className="w-max">
+          <StatusCard_1 />
+        </div>
+      </div>
+    </div>
   )
 }

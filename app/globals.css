@@ -8,3 +8,9 @@
 * {
     font-family: 'Inter', sans-serif;
 }
+
+
+
+html {
+    @apply text-[14px] xl:text-[16px] 2xl:text-[18px];
+}
