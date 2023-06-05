@@ -1,4 +1,3 @@
-import FIllButton from "./Button/FillButton";
 import OutlineButton from "./Button/OutlineButton";
 
 export default function StatusCard_1() {

@@ -14,3 +14,39 @@
 html {
     @apply text-[14px] xl:text-[16px] 2xl:text-[18px];
 }
+
+
+
+
+
+*::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 0.4rem;
+}  
+*::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.09);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar {
+    width: 0.6rem;
+}  
+body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+
+#live-auction.swiper-slide {
+    @apply opacity-40 !scale-90 !transition-all !duration-300;
+}
+
+#live-auction.swiper-slide-active {
+    @apply opacity-100 !scale-100;
+}

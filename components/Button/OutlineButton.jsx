@@ -1,7 +1,7 @@
 
 "use client"
 
-export default function OutlineButton({ text, onClick, textColor="text-white", borderColor="border-white/50" }) {
+export default function OutlineButton({ text, onClick, textColor="text-white", borderColor="border-white/50", className="" }) {
 
     const handleOnCLick = e => {
         typeof onClick === "function" && onClick(e)
@@ -11,7 +11,7 @@ export default function OutlineButton({ text, onClick, textColor="text-white", b
         <button
             onClickCapture={handleOnCLick}
             className={`py-2 px-7 active:scale-95 transition-transform duration-300 border ${borderColor} rounded-lg border-gray-50 ${textColor
-            } bg-transparent text-sm font-normal`}
+            } bg-transparent text-sm font-normal ${className}`}
         >
             {text}
         </button>
