@@ -5,9 +5,9 @@ import OutlineButton from "./Button/OutlineButton"
 
 export default function Hero_1() {
     return (
-        <div className="w-full grid grid-cols-2 place-items-center relative z-10 pt-10 px-10 overflow-hidden">
+        <div className="w-full grid max-lg:pt-28 grid-cols-1 lg:grid-cols-2 place-items-center relative z-10 pt-14 px-10 overflow-hidden">
 
-            <div className="w-44 h-44 bg-purple-500/30 rounded-full absolute top-1 left-2 blur-3xl -z-10"></div>
+            <div className="w-44 h-44 bg-purple-500/30 rounded-full absolute top-28 left-2 blur-3xl -z-10"></div>
 
             <div className="pb-10">
                 <p className="text-white text-5xl font-semibold tracking-wide flex flex-col gap-y-2.5">
@@ -33,17 +33,26 @@ export default function Hero_1() {
                     
                 </div>
 
-                <p className="text-3xl text-white font-semibold mt-10">42k +</p>
-                <p className="text-sm text-white/60 font-light mt-0.5 tracking-wide">User Active</p>
+                <div className="flex max-sm:flex-row flex-col max-sm:items-center max-sm:justify-evenly gap-4 mt-10 w-full">
+                    <div>
+                        <p className="text-3xl text-white font-semibold">42k +</p>
+                        <p className="text-sm text-white/60 font-light mt-0.5 tracking-wide">User Active</p>
+                    </div>
 
-                <p className="text-3xl text-white font-semibold mt-3">8k +</p>
-                <p className="text-sm text-white/60 font-light mt-0.5 tracking-wide">Art Works</p>
+                    <div>
+                        <p className="text-3xl text-white font-semibold">8k +</p>
+                        <p className="text-sm text-white/60 font-light mt-0.5 tracking-wide">Art Works</p>
+                    </div>
 
-                <p className="text-3xl text-white font-semibold mt-3">2k +</p>
-                <p className="text-sm text-white/60 font-light mt-0.5 tracking-wide">Artist</p>
+                    <div>
+                        <p className="text-3xl text-white font-semibold">2k +</p>
+                        <p className="text-sm text-white/60 font-light mt-0.5 tracking-wide">Artist</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div className="relative w-full h-full flex items-end">
+            <div className="relative w-full h-full flex items-end max-lg:hidden">
                 <div className="w-52 h-52 bg-purple-500/50 rounded-full absolute bottom-1 -left-4 blur-3xl -z-10"></div>
 
                 <Image

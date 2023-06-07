@@ -3,7 +3,10 @@ import OutlineButton from "./Button/OutlineButton";
 export default function StatusCard_1() {
 
     return (
-        <div className="w-full rounded-xl p-3 px-7 bg-slate-800/60 backdrop-blur-sm flex items-center justify-evenly gap-x-9">
+        <div
+            className="w-full rounded-xl p-3 px-7 bg-slate-800/60 backdrop-blur-sm
+            max-sm:flex-col flex items-center justify-evenly gap-x-9 gap-y-4"
+        >
 
             <div className="flex flex-col gap-y-1">
                 <p className="text-sm text-white/60 tracking-wide font-light">Current Big</p>
@@ -35,7 +38,7 @@ export default function StatusCard_1() {
 
             <div className="border-r border-gray-600 rounded self-stretch"></div>
 
-            <div className="flex flex-col gap-y-2.5">
+            <div className="flex flex-col gap-y-2.5 max-sm:w-full">
                 <OutlineButton
                     text="Take a seat"
                     borderColor="border-purple-500"

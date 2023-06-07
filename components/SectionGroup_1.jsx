@@ -18,7 +18,7 @@ export default function SectionGroup_1({ left=null, right=null, className="", ch
                     typeof left === "string"
                     ?
                         <p
-                            className="text-2xl font-semibold tracking-wide text-white"
+                            className="text-2xl flex-shrink-0 font-semibold tracking-wide text-white"
                         >
                             {left}
                         </p>
@@ -29,7 +29,7 @@ export default function SectionGroup_1({ left=null, right=null, className="", ch
                 {
                     hasSeach
                     ?
-                        <div className="w-full max-w-sm relative">
+                        <div className="w-6/12 md:w-full max-w-xs relative">
                             <input
                                 onChange={handleOnSearchValueChagne}
                                 className="w-full border border-white/20 rounded-xl p-3 text-sm tracking-wide
@@ -41,7 +41,7 @@ export default function SectionGroup_1({ left=null, right=null, className="", ch
                         typeof right === "string"
                         ?
                             <p
-                                className="text-white/80 text-sm tracking-wide font-light"
+                                className="text-white/80 flex-shrink-0 text-sm tracking-wide font-light"
                             >
                                 {right}
                             </p>

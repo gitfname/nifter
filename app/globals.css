@@ -43,10 +43,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-#live-auction.swiper-slide {
-    @apply opacity-40 !scale-90 !transition-all !duration-300;
+#live-auction .swiper-slide {
+    @apply !opacity-40 !scale-90 !transition-all !duration-300;
 }
 
-#live-auction.swiper-slide-active {
-    @apply opacity-100 !scale-100;
+#live-auction .swiper-slide-active {
+    @apply !opacity-100 !scale-100;
 }
